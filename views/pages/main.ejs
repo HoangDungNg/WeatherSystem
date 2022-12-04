@@ -1,0 +1,139 @@
+<div class="container py-5 h-100">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-lg-10 col-xl-8">
+      <div class="card rounded-3">
+        <div class="card-body p-4 p-md-5">
+          <form class="px-md-2">
+            <p class="h1">Weather System</p>
+            <p class="lead">Select parameters to see how this system works</p>
+            <!--FIRST FIELDSET-->
+            <div class="add1"></div>
+            <fieldset class="border p-2">
+              <legend class="float-none w-auto p-1">Data to Display</legend>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="ws"
+                  id="wsCheckbox"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Wind Speed
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="sr"
+                  id="srCheckbox"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Solar Radiation
+                </label>
+              </div>
+            </fieldset>
+            <!--SECOND FIELDSET-->
+            <fieldset class="border p-2">
+              <legend class="float-none w-auto p-1">Data Range</legend>
+              <div class="mb-3 row">
+                <label for="year" class="col-sm-2 col-form-label">Year</label>
+                <div class="col-sm-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="year"
+                    min="2007"
+                    max="2016"
+                  />
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="startMonth" class="col-sm-2 col-form-label"
+                  >Start Month</label
+                >
+                <select
+                  class="form-select col-sm-4 w-auto"
+                  aria-label="Default select example"
+                  id="startMonth"
+                >
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+                <label for="endMonth" class="col-sm-2 col-form-label"
+                  >End Month</label
+                >
+                <select
+                  class="form-select col-sm-4 w-auto"
+                  aria-label="Default select example"
+                  id="endMonth"
+                >
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+              </div>
+            </fieldset>
+            <!--THIRD FIELDSET-->
+            <fieldset class="border p-2">
+              <legend class="float-none w-auto p-1">Output Format</legend>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="table"
+                  id="outputFormat1"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Table
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="graph"
+                  id="outputFormat2"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Graph
+                </label>
+              </div>
+            </fieldset>
+            <div class="button-container mt-3">
+              <button type="button" class="btn btn-secondary" id="submit-btn">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="result py-5">
+    <div class="tableResult"></div>
+    <div class="chartResult">
+      <p class="lead" id="cTitle"></p>
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+</div>

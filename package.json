@@ -1,0 +1,22 @@
+{
+  "name": "weathersystem",
+  "version": "0.0.1",
+  "description": "This is ICT375 Assignment 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hoang Dung",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "http-errors": "^2.0.0",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^2.0.20",
+    "xml2json": "^0.12.0"
+  }
+}
